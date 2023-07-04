@@ -1,0 +1,44 @@
+body {
+  background-color: #d8bfd8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+}
+#root {
+  color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  border: 1px solid #000;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+button:hover {
+  color: #000;
+  transform: translate(-0.25rem, -0.25rem);
+  background: #6868ac;
+  box-shadow: 0.25rem 0.25rem #000;
+}
+
+button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: 0.25rem 0.25rem #000;
+}
