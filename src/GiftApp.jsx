@@ -8,7 +8,7 @@ const GiftApp = () => {
   const [showError, setShowError] = useState(false);
 
   const onAddCategory = (category) => {
-    if (categories.includes(category)) {
+    if (!category || categories.includes(category)) {
       setShowError(true);
       return;
     }
