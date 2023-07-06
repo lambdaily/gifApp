@@ -32,8 +32,8 @@ const Form = ({ onAddCategory, showError }) => {
             type="text"
             className={`border ${
               showError || isEmpty
-                ? 'border-red-500'
-                : 'focus:outline-none border-light-secondary focus:border-light-secondary'
+                ? 'border-2 border-red-500'
+                : 'border-2 border-light-secondary focus:border-light-secondary'
             } p-2 mb-2`}
           />
         </div>
