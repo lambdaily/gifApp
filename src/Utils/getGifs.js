@@ -1,6 +1,6 @@
 export const getGifs = (category) => {
   return fetch(
-    `https://api.giphy.com/v1/gifs/search?api_key=tG5sE7CBPf2BYBa1HqTyWySPCE3OAJHk&q=${category}&limit=3`
+    `https://api.giphy.com/v1/gifs/search?api_key=''&q=${category}&limit=3`
   )
     .then((response) => response.json())
     .then(({ data }) => {
